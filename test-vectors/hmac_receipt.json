@@ -1,0 +1,36 @@
+{
+  "issued_at": "2026-05-25T12:00:00.000Z",
+  "issuer": "provenex-core/1.0.0",
+  "output": {
+    "hash": "sha256:2222222222222222222222222222222222222222222222222222222222222222",
+    "hash_algorithm": "sha256"
+  },
+  "policy": {
+    "verification": {
+      "block_stale": false,
+      "block_tampered": true,
+      "block_unauthorized": true,
+      "block_unverified": false,
+      "flag_stale": true,
+      "flag_tampered": true,
+      "flag_unauthorized": true,
+      "flag_unverified": true
+    }
+  },
+  "receipt_id": "prx_00000000000000000000000000000003",
+  "schema_version": "2.5.0",
+  "signature": {
+    "algorithm": "hmac-sha256",
+    "value": "e720d754342cf01b7f797832e23d81e56ccb31dddce66e34819f79287ed595be"
+  },
+  "sources": [],
+  "summary": {
+    "overall_status": "PASS",
+    "stale": 0,
+    "tampered": 0,
+    "total_chunks": 0,
+    "unauthorized": 0,
+    "unverified": 0,
+    "verified": 0
+  }
+}

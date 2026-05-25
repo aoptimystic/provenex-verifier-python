@@ -1,0 +1,78 @@
+{
+  "caller_hash": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "issued_at": "2026-05-25T12:00:00.123Z",
+  "issuer": "provenex-core/1.0.0",
+  "output": {
+    "hash": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
+    "hash_algorithm": "sha256"
+  },
+  "policy": {
+    "access_control": {
+      "decisions": [
+        {
+          "chunk_index": 0,
+          "decision": "allow"
+        }
+      ],
+      "rules_fired": []
+    },
+    "verification": {
+      "block_stale": false,
+      "block_tampered": true,
+      "block_unauthorized": true,
+      "block_unverified": false,
+      "flag_stale": true,
+      "flag_tampered": true,
+      "flag_unauthorized": true,
+      "flag_unverified": true
+    }
+  },
+  "receipt_id": "prx_00000000000000000000000000000002",
+  "schema_version": "2.5.0",
+  "signature": {
+    "algorithm": "ed25519",
+    "value": "8fef26397b2f0ff530a0c03c6d8202a13df9270aad48632e02ec2a8919dbfca4c8eac9221c5fd4d15c37dc95736fe14a6a54b0989493614fd02769eff9b6ee01"
+  },
+  "sources": [
+    {
+      "authorized": true,
+      "chunk_index": 0,
+      "chunk_length": 512,
+      "chunk_offset": 0,
+      "claims": {
+        "classification": "public",
+        "jurisdiction": "EU"
+      },
+      "document_id": "doc_policy_v4",
+      "document_version": "sha256:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "entry_kind": "whole_chunk",
+      "fingerprint": "sha256:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "ingested_at": "2026-04-01T09:00:00.000Z",
+      "normalization_applied": [
+        "unicode_nfc",
+        "whitespace_collapse"
+      ],
+      "verification_outcome": "VERIFIED"
+    },
+    {
+      "authorized": false,
+      "chunk_index": 1,
+      "entry_kind": "whole_chunk",
+      "fingerprint": "sha256:dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+      "verification_outcome": "UNVERIFIED"
+    }
+  ],
+  "summary": {
+    "overall_status": "PASS",
+    "stale": 0,
+    "tampered": 0,
+    "total_chunks": 2,
+    "unauthorized": 0,
+    "unverified": 1,
+    "verified": 1
+  },
+  "transparency_log": {
+    "tree_root": "sha256:eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+    "tree_size": 42
+  }
+}

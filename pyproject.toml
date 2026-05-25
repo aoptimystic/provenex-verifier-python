@@ -1,0 +1,81 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "provenex-verifier"
+version = "1.0.0"
+description = "Standalone, offline verifier for Provenex receipts. Implements the receipt-format spec; no network, no telemetry, no dependencies on provenex-core."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+authors = [
+    { name = "Provenex", email = "contact@provenex.ai" },
+]
+keywords = [
+    "provenex",
+    "receipt",
+    "verifier",
+    "ed25519",
+    "merkle",
+    "rfc6962",
+    "ai-compliance",
+    "rag",
+    "llm-security",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Security :: Cryptography",
+]
+dependencies = [
+    "cryptography>=41.0.0",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+]
+
+[project.urls]
+Homepage = "https://provenex.ai"
+Source = "https://github.com/provenex/provenex-verifier-python"
+Issues = "https://github.com/provenex/provenex-verifier-python/issues"
+Documentation = "https://github.com/provenex/provenex-verifier-python#readme"
+
+[project.scripts]
+provenex-verify = "provenex_verifier.cli:main"
+
+[tool.setuptools]
+packages = ["provenex_verifier"]
+include-package-data = true
+
+[tool.setuptools.package-data]
+provenex_verifier = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.coverage.run]
+source = ["provenex_verifier"]
+branch = true
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+]
+show_missing = true
+fail_under = 100
