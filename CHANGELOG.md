@@ -23,4 +23,4 @@ Initial release.
 * No dependency on `provenex-core`. The library implements the receipt-format spec directly.
 * Single runtime dependency: `cryptography` (for Ed25519 primitives).
 
-[1.0.0]: https://github.com/provenex/provenex-verifier-python/releases/tag/v1.0.0
+[1.0.0]: https://github.com/aoptimystic/provenex-verifier-python/releases/tag/v1.0.0

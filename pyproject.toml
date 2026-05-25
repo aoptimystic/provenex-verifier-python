@@ -49,9 +49,9 @@ test = [
 
 [project.urls]
 Homepage = "https://provenex.ai"
-Source = "https://github.com/provenex/provenex-verifier-python"
-Issues = "https://github.com/provenex/provenex-verifier-python/issues"
-Documentation = "https://github.com/provenex/provenex-verifier-python#readme"
+Source = "https://github.com/aoptimystic/provenex-verifier-python"
+Issues = "https://github.com/aoptimystic/provenex-verifier-python/issues"
+Documentation = "https://github.com/aoptimystic/provenex-verifier-python#readme"
 
 [project.scripts]
 provenex-verify = "provenex_verifier.cli:main"

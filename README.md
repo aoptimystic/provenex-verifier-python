@@ -1,6 +1,6 @@
 # provenex-verifier
 
-[![CI](https://github.com/provenex/provenex-verifier-python/actions/workflows/ci.yml/badge.svg)](https://github.com/provenex/provenex-verifier-python/actions/workflows/ci.yml)
+[![CI](https://github.com/aoptimystic/provenex-verifier-python/actions/workflows/ci.yml/badge.svg)](https://github.com/aoptimystic/provenex-verifier-python/actions/workflows/ci.yml)
 [![PyPI](https://img.shields.io/pypi/v/provenex-verifier.svg)](https://pypi.org/project/provenex-verifier/)
 [![Python](https://img.shields.io/pypi/pyversions/provenex-verifier.svg)](https://pypi.org/project/provenex-verifier/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
