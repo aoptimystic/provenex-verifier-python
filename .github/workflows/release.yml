@@ -10,7 +10,7 @@ name: Release
 #
 # One-time setup required before the first run:
 #
-#   * On PyPI, register https://github.com/aoptimystic/provenex-verifier-python
+#   * On PyPI, register https://github.com/provenex/provenex-verifier-python
 #     as a trusted publisher for the `provenex-verifier` project with workflow
 #     `release.yml` and environment `pypi`.
 #     https://docs.pypi.org/trusted-publishers/

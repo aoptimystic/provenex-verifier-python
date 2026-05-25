@@ -12,7 +12,7 @@ Thank you for your interest in contributing. The verifier is intentionally small
 ## Development
 
 ```
-git clone https://github.com/aoptimystic/provenex-verifier-python
+git clone https://github.com/provenex/provenex-verifier-python
 cd provenex-verifier-python
 python -m pip install -e ".[test]"
 make test
